@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "marketplace-app",
+    "slug": "marketplace-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "marketplaceapp",
+    "userInterfaceStyle": "automatic",
+    "web": {
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
