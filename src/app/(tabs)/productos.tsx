@@ -17,7 +17,7 @@ export default function ProductosScreen() {
       <Text style={styles.subtitulo}>Accesorios y repuestos</Text>
 
       <View style={styles.tabla}>
-        {/* Cabecera */}
+        
         <View style={[styles.fila, styles.cabecera]}>
           <Text style={[styles.celda, styles.cabeceraTexto, styles.celdaAncha]}>
             Producto
@@ -26,7 +26,7 @@ export default function ProductosScreen() {
           <Text style={[styles.celda, styles.cabeceraTexto]}>Precio</Text>
         </View>
 
-        {/* Filas */}
+        
         {PRODUCTOS.map((p, i) => (
           <View key={i} style={[styles.fila, i % 2 === 1 && styles.filaImpar]}>
             <Text style={[styles.celda, styles.celdaAncha]}>{p.nombre}</Text>

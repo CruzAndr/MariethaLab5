@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { COLORS } from "@/theme";
 
-// Datos de las citas (en código).
+
 const CITAS = [
   { fecha: "28 jun", hora: "10:00", servicio: "Mantenimiento general" },
   { fecha: "02 jul", hora: "15:30", servicio: "Cambio de frenos" },
@@ -16,7 +16,6 @@ export default function CitasScreen() {
       <Text style={styles.subtitulo}>Tus citas de taller</Text>
 
       <View style={styles.tabla}>
-        {/* Cabecera */}
         <View style={[styles.fila, styles.cabecera]}>
           <Text style={[styles.celda, styles.cabeceraTexto]}>Fecha</Text>
           <Text style={[styles.celda, styles.cabeceraTexto]}>Hora</Text>
@@ -25,7 +24,7 @@ export default function CitasScreen() {
           </Text>
         </View>
 
-        {/* Filas */}
+
         {CITAS.map((cita, i) => (
           <View key={i} style={[styles.fila, i % 2 === 1 && styles.filaImpar]}>
             <Text style={styles.celda}>{cita.fecha}</Text>
